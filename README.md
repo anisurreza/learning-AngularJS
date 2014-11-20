@@ -1,6 +1,6 @@
 #AngularJS School Assignment
 
-This project is based on [http://github.com/angular/angular-seed] (angular-seed).
+This project is based on angular-seed.
 
 
 
