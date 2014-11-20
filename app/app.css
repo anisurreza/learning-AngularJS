@@ -1,30 +1,42 @@
 /* app css stylesheet */
 
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+
+.list-students, .student-details {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
 }
 
-.menu:before {
-  content: "[";
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.menu:after {
-  content: "]";
+.list-students {
+  width: 38%;
+  cursor: pointer;
+  border-right: 1px solid rgba(69, 90, 100, 0.2);
 }
 
-.menu > li {
-  display: inline;
+.list-students a {
+  display: block;
+  line-height: 1.5;
+  padding: 24px 10px;
+  border-bottom: 1px solid rgba(69, 90, 100, 0.2);
 }
 
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
+
+.list-students a:last-child {
+  border-bottom: 0;
 }
 
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
+.student-details {
+  width: 60%;
+  padding: 20px;
+}
+
+a:hover, .active {
+  background: rgb(69, 90, 100);
+  color: #fff;
 }

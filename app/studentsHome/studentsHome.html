@@ -1,0 +1,14 @@
+  <div class="container">
+    <div class="list-students">
+     <a ng-class="{'active': selectedStudent.id == student.id}" ng-repeat="student in students" ng-click="details(student.id)">{{student.first_name}} {{student.last_name}}</a>
+    </div>
+    <div class="student-details">
+      <div ng-hide="selectedStudent"> Select a student </div>
+      <div ng-show="selectedStudent">
+        <h3>{{selectedStudent.first_name}} {{selectedStudent.last_name}}</h3>
+        <p>Email: {{selectedStudent.email}}</p>
+        <p>Phone: {{selectedStudent.phone}}</p>
+        <p>Lives in {{selectedStudent.country}}</p>
+      </div>
+    </div>
+  </div>

@@ -1,12 +1,12 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
-  'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
+var learnAngularJS = angular.module('learnAngularJS', [
+  'ui.router',
+  'learnAngularJS.studentsHome',
+  'learnAngularJS.studentDetails',
+  'learnAngularJS.services'
 ]).
-config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/view1'});
+config(['$stateProvider','$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
+  $urlRouterProvider.otherwise('students');
 }]);
