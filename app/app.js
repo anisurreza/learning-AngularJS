@@ -3,8 +3,8 @@
 // Declare app level module which depends on views, and components
 var learnAngularJS = angular.module('learnAngularJS', [
   'ui.router',
+  'xeditable',
   'learnAngularJS.studentsHome',
-  'learnAngularJS.studentDetails',
   'learnAngularJS.services'
 ]).
 config(['$stateProvider','$urlRouterProvider', function($stateProvider, $urlRouterProvider) {

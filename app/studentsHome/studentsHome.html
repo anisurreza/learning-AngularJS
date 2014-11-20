@@ -5,10 +5,10 @@
     <div class="student-details">
       <div ng-hide="selectedStudent"> Select a student </div>
       <div ng-show="selectedStudent">
-        <h3>{{selectedStudent.first_name}} {{selectedStudent.last_name}}</h3>
-        <p>Email: {{selectedStudent.email}}</p>
-        <p>Phone: {{selectedStudent.phone}}</p>
-        <p>Lives in {{selectedStudent.country}}</p>
+        <h3><span editable-text="selectedStudent.first_name">{{selectedStudent.first_name}}</span> <span editable-text="selectedStudent.last_name">{{selectedStudent.last_name}}</span></h3>
+        <p editable-text="selectedStudent.email">Email: {{selectedStudent.email}}</p>
+        <p>Phone: <span editable-text="selectedStudent.phone">{{selectedStudent.phone}}</span></p>
+        <p>Lives in <span editable-text="selectedStudent.country">{{selectedStudent.country}}</span></p>
       </div>
     </div>
   </div>
